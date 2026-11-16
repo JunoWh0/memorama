@@ -71,7 +71,7 @@ function flipCard(e) {
         firstCard = secondCard = null;
         lock = false;
 
-        if (document.querySelectorAll('flipped').length === cards.length) {
+        if (document.querySelectorAll('.flipped').length === cards.length) {
             stopTimer();
             const time = Math.floor((Date.now() - startTime) / 1000);
             saveBestTime(time);
